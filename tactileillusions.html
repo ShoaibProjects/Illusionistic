@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactile Illusions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900">
+    <header class="sticky top-0">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Penrose_triangle.svg"
+                        class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span
+                        class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Illusionistic</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="opticalillusions.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Optical
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="auditoryillusions.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Auditory
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="tactileillusions.html"
+                                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                                aria-current="page">Tactile
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-white dark:bg-gray-900 border-box h-full pb-2">
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2
+                    class="md:hidden mb-8 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    What are
+                    Tactile illusions?</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <img class="w-3/4 mx-auto rounded-2xl hidden dark:block"
+                    src="https://www.rd.ntt/_assets/img/research/JN202107_14487/JN202107_14487_main.jpg"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        What are Tactile illusions?</h2>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">Tactile illusions are when the
+                        sense of touch is tricked into perceiving sensations that aren't actually there. This happens
+                        because the brain interprets conflicting or unusual sensory signals in a way that creates a
+                        false or altered perception of touch. These illusions demonstrate how the brain integrates touch
+                        information with other sensory inputs to shape our experience of physical sensations.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="md:hidden mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">The
+                    Aristotle illusion</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <img class="w-5/6 mx-auto hidden rounded-3xl dark:block"
+                    src="https://philosophyofbrains.com/wp-content/uploads/2013/10/image1.jpg" alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        The Aristotle illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Cross your fingers, then touch a small object such as a
+                        pencil, and it feels like you are touching two pensils!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The Aristotle illusion is a
+                        tactile phenomenon that occurs when you cross your fingers and touch a small object, like a
+                        marble or a pen, between the tips. You may feel as though you are touching two separate objects
+                        instead of one.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvzANqax6Sqk_MDffzv2XVeTBbLJP0NZIyJQ&s"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>This illusion happens because the brain interprets the unusual finger positions as signals
+                            indicating the presence of two objects due to the unexpected tactile sensation on opposite
+                            sides of each finger.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a
+                                href="https://www.newscientist.com/article/mg20126997-300-tactile-illusions-1-the-aristotle-illusion/">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="md:hidden mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Thermal
+                    grill illusion</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/77/Stepping-Feet-Motion-Illusion.gif"
+                    alt="dashboard image">
+                <img class="w-5/6 mx-auto hidden rounded-3xl dark:block"
+                    src="https://www.frontiersin.org/files/Articles/1278894/fnhum-17-1278894-HTML/image_m/fnhum-17-1278894-g007.jpg"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Thermal grill illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">When hand is pressed on mindly warm and cool grill bars,
+                        it
+                        feels like burning!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The illusion is created by an
+                        interlaced grill of bars which are warm, e.g. 40 °C, and cool, e.g. 20 °C. When someone presses
+                        a hand against the grill, they experience the illusion of
+                        burning heat. But if the person presses against only a cool bar, only coolness is experienced;
+                        if the person presses against only a warm bar, only warmth is experienced.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-4/5 mx-auto" src="images/thermalGrill.gif" alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> This illusion is caused by the way the nervous system processes conflicting temperature
+                            signals, leading to the perception of pain without an actual harmful stimulus.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Thermal_grill_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">Rubber
+                    hand illusion</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fraser_spiral.svg/338px-Fraser_spiral.svg.png"
+                    alt="dashboard image">
+                <img class="w-full mx-auto hidden rounded-3xl dark:block"
+                    src="https://cdn.thepoke.com/uploads/2022/05/06025453/rubberhand.png" alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Rubber hand illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">A person can conditioned to feeling that a rubber hand is
+                        his/her own hand!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">In a experiment, subjects with
+                        normal brain function
+                        were positioned with their left hand hidden out of sight. They saw a lifelike rubber left hand
+                        in front of them. The experimenters stroked both the subjects hidden left hand and the visible
+                        rubber hand with a paintbrush. The experiment showed that if the two hands were stroked
+                        synchronously and in the same direction, the subjects began to experience the rubber hand as
+                        their own.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/73/Rubber_hand_illusion.png"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>This illusion is caused by the brain's integration of visual, tactile, and
+                            proprioceptive information, leading to a sense of ownership over the rubber hand when it is
+                            seen and felt being stroked in synchrony with the hidden real hand. This multisensory
+                            integration tricks the brain into perceiving the rubber hand as part of the body.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Body_transfer_illusion#Rubber_hand_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Cutaneous rabbit illusion</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://a.storyblok.com/f/253271/1024x1024/5ad1fd607d/42_rotsnakes_main.jpg/m/"
+                    alt="dashboard image">
+                <img class="w-4/6 mx-auto hidden rounded-3xl dark:block"
+                    src="https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-91138-6_3/MediaObjects/480211_1_En_3_Fig5_HTML.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Cutaneous rabbit illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Tap on wrist twice and then elbow. It could feels like
+                        taps happens across the arm.
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The cutaneous rabbit illusion is a
+                        tactile phenomenon in which a sequence of rapid taps applied to one area of the skin leads to
+                        the perception that the taps are spreading or "hopping" along the skin toward another area, even
+                        though no physical movement occurs between the points of contact. For example, if a series of
+                        taps is delivered to the wrist and then to the elbow, a person may feel as if the taps have
+                        traveled up their forearm like a hopping rabbit. </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/58/Bayesian_model_reproduction_of_length_contraction_illusions_including_the_cutaneous_rabbit_illusion.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> This illusion occurs because the brain interprets the rapid sequence of taps as a continuous
+                            motion, filling in gaps with perceived sensations along the path.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Cutaneous_rabbit_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Pinocchio illusion</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lilac-Chaser.gif" alt="dashboard image">
+                <img class="w-5/6 mx-auto hidden rounded-3xl dark:block"
+                    src="https://psychologicalscience.blog.gustavus.edu/files/2019/03/the-pinocchio-illusion.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Pinocchio illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Nose extension sensation illusion
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">Its a sensory illusion that can be
+                        triggered by irritation of various muscle
+                        groups through vibration in experiments, and causes a temporary disturbance of the depth
+                        sensitivity and thus of the sense of position of individual body parts. For example, people who
+                        touch their own nose while blindfolded can feel as if their nose is up
+                        to 30 cm long when vibrations are simultaneously triggered in the biceps of the same arm. This
+                        also works if the blindfolded person touches the nose of another person standing in front of
+                        them.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://www.frontiersin.org/files/Articles/712375/frvir-03-712375-HTML/image_m/frvir-03-712375-g001.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> The cause is that the vibrations disrupt the position of the arm, which signals to the brain
+                            that the arm should be extended more. This occurs because the
+                            brain tries to reconcile the conflicting sensory information, resulting in the perception of
+                            an elongating nose.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a
+                                href="https://openi.nlm.nih.gov/detailedresult?img=PMC4371812_fnhum-09-00141-g0001&req=4">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="text-gray-600 body-font pt-12 dark:bg-gray-900">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col  bg-gray-800">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Penrose_triangle.svg" alt=""
+                    class="h-6 sm:h-9">
+                <span class="ml-3 text-xl text-gray-300">Illusionistic</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 shoaib akhtar —
+                <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" rel="noopener noreferrer"
+                    target="_blank">@illusionistic</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditory Illusions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900">
+    <header class="sticky top-0">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Penrose_triangle.svg"
+                        class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span
+                        class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Illusionistic</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="opticalillusions.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Optical
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="auditoryillusions.html"
+                                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                                aria-current="page">Auditory
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="tactileillusions.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Tactile
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-white dark:bg-gray-900 border-box h-full pb-2">
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2
+                    class="md:hidden mb-8 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    What are
+                    Auditory illusions?</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <img class="w-3/4 mx-auto rounded-2xl hidden dark:block"
+                    src="https://i.ytimg.com/vi/w40XcUP5KrI/maxresdefault.jpg" alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        What are Auditory illusions?</h2>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">Auditory illusions are sound-based
+                        phenomena that trick the brain into hearing something that isn't there or interpreting sounds in
+                        misleading ways. These illusions occur due to the brain's processing of sound, which can be
+                        influenced by context, timing, frequency, and sensory integration, leading to perceptions of
+                        nonexistent sounds or altered interpretations.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="md:hidden mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">McGurk
+                    effect</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <div class="w-full hidden dark:block">
+                    <iframe class="w-full aspect-video rounded-3xl"
+                        src="https://www.youtube.com/embed/2k8fHR9jKVM?si=LoKBY_b74SDEPNtA" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        McGurk effect</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">At first it will sound 'BA' then 'FA' but its is 'BA' both
+                        times!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The McGurk effect is a perceptual
+                        phenomenon that demonstrates an interaction between hearing and vision in speech perception. The
+                        illusion occurs when the auditory component of one sound is paired with the visual component of
+                        another sound, leading to the perception of a third sound. The visual information a person
+                        gets from seeing a person speak changes the way they hear the sound.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://www.psych.ualberta.ca/~varn/Psyco/C7_MCGURK%20Folder/media/m11t025da1f2.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>The McGurk effect is a perceptual phenomenon where conflicting visual lip movements and
+                            auditory sounds result in the perception of a third sound, highlighting the interaction
+                            between visual and auditory information in speech perception.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/McGurk_effect">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="md:hidden mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Yanny or
+                    Laurel</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/77/Stepping-Feet-Motion-Illusion.gif"
+                    alt="dashboard image">
+                <iframe class="w-full aspect-video rounded-3xl"
+                    src="https://www.youtube.com/embed/yDiXQl7grPQ?si=Y0CankjQOAleHV4L" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Yanny or Laurel</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Whether you will hear "Yanny" or "Lourel"?
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">Yanny or Laurel is an auditory
+                        illusion that became popular in May 2018, in which a short audio recording of speech can be
+                        heard as one of two words. 53 percent of over 500,000 respondents to a Twitter poll reported
+                        hearing a man saying the word "Laurel", while 47 percent of people reported hearing a voice
+                        saying the name "Yanny".</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://news.mit.edu/sites/default/files/images/201805/mit-mcgovern-neuroscience-laurel-yanny-2018_0.png"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>Analysis of the sound frequencies has confirmed that both sets of sounds are present in the
+                            mixed recording, but some users focus on the higher frequency sounds in "Yanny" and
+                            cannot seem to hear the lower sounds of the word "Laurel". When the audio clip is slowed to
+                            lower frequencies, the word "Yanny" is heard by more listeners, while faster playback
+                            loudens "Laurel".
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Yanny_or_Laurel">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">Shepard
+                    tone</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fraser_spiral.svg/338px-Fraser_spiral.svg.png"
+                    alt="dashboard image">
+                <iframe class="w-full aspect-video rounded-3xl"
+                    src="https://www.youtube.com/embed/-ND-xtMaz0E?si=cyGT6UpB9Yaobkd8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Shepard tone</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">The audio keeps getting faster or higher pitch but is just
+                        in loop!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">A Shepard tone, named after Roger
+                        Shepard, is a sound consisting of a superposition of sine waves separated by octaves. When
+                        played with the bass pitch of the tone moving upward or downward, it is referred to as the
+                        Shepard scale. This creates the auditory illusion of a tone that seems to continually ascend or
+                        descend in pitch, yet which ultimately gets no higher or lower.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://www.premiumbeat.com/blog/wp-content/uploads/2017/07/Sheppard-Tone-Vox.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>As these tones cycle, the transitions between them are carefully managed to create the
+                            perception of a continuous, infinite rise or fall in pitch, even though the sequence
+                            repeats. This effect tricks the brain into perceiving a never-ending ascent or descent,
+                            similar to the visual illusion of a barbershop pole.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Shepard_tone">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Flash-beep illusion.</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://a.storyblok.com/f/253271/1024x1024/5ad1fd607d/42_rotsnakes_main.jpg/m/"
+                    alt="dashboard image">
+                <iframe class="w-full aspect-video rounded-3xl" src="https://www.youtube.com/embed/D3Z1cxA2Tp0"
+                    title="How Sound Changes Sight - How Many Flashes Do You See?" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Flash-beep illusion.</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">How many flashes did you count?
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">In this phenomenon, two brief
+                        flashes of light, when coupled with three beeps or tones, can make the flashes appear as if
+                        there are three distinct flashes. This occurs because the auditory cues influence the visual
+                        perception, causing the brain to group the flashes and sounds together in a way that creates the
+                        illusion of an additional flash.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://www.frontiersin.org/files/Articles/521338/fnins-14-00298-HTML/image_m/fnins-14-00298-g001.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> This illusion is caused by the way our brain integrates multisensory information.
+                            When two flashes of light are paired with three beeps, the auditory stimuli can lead to a
+                            perceptual misalignment, causing the brain to group the sounds and flashes together. This
+                            temporal binding makes it appear as though there are three flashes, even though only two are
+                            presented.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0149763420305637">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">Talking
+                    piano</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lilac-Chaser.gif" alt="dashboard image">
+                <iframe class="w-full aspect-video rounded-3xl"
+                    src="https://www.youtube.com/embed/muCPjK4nGY4?si=tkb8hh5Rbmvnk2Q9" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Talking piano</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Pianos can talk?
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The talking piano illusion is an
+                        auditory illusion where a sequence of piano notes is perceived as spoken words or phrases when
+                        played at a specific speed and pitch. This happens because the brain interprets the musical
+                        tones as speech sounds, especially when the notes are played in a rhythm and pattern similar to
+                        speech.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full" src="https://i.ytimg.com/vi/QJHzEOJeeR4/maxresdefault.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> The illusion is caused by the brain’s ability to interpret musical tones as
+                            speech when they are played in a rhythm and pattern that resembles the cadence and
+                            intonation of spoken language. The specific arrangement of pitch and timing tricks the
+                            auditory system into perceiving recognizable speech patterns, even though only piano notes
+                            are played.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://kottke.org/24/05/the-talking-piano">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="text-gray-600 body-font pt-12 dark:bg-gray-900">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col  bg-gray-800">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Penrose_triangle.svg" alt=""
+                    class="h-6 sm:h-9">
+                <span class="ml-3 text-xl text-gray-300">Illusionistic</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 shoaib akhtar —
+                <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" rel="noopener noreferrer"
+                    target="_blank">@illusionistic</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>

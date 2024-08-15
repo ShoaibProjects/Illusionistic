@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Illusions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900">
+    <header class="sticky top-0">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Penrose_triangle.svg"
+                        class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span
+                        class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Illusionistic</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        </li>
+                        <li>
+                            <a href="opticalillusions.html"
+                                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                                aria-current="page">Optical
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="auditoryillusions.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Auditory
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="tactileillusions.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Tactile
+                                illusions</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-white dark:bg-gray-900 border-box h-full pb-2">
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2
+                    class="md:hidden mb-8 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    What are
+                    Optical illusions?</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <img class="w-3/4 mx-auto rounded-2xl hidden dark:block"
+                    src="https://img.jagranjosh.com/images/2022/June/362022/opticalillusion1(1).webp"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        What are Optical illusions?</h2>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">An optical illusion is a visual
+                        phenomenon that deceives the eyes, leading the brain to perceive something different from
+                        reality. These illusions can arise from the way light and shadow interact, the arrangement of
+                        images, or the colors used, tricking our brains into seeing things that aren't there, such as
+                        movement, distortion, or impossible objects. Optical illusions demonstrate how our perception is
+                        not always a direct reflection of the world around us but is influenced by context, prior
+                        knowledge, and sensory interpretation.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="md:hidden mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Checker
+                    shadow
+                    illusion</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <img class="w-full hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Checker_shadow_illusion.svg/1280px-Checker_shadow_illusion.svg.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Checker shadow
+                        illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">The regions marked A and B are the same shade of gray!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The image depicts a checkerboard
+                        with
+                        light and dark squares, partly shadowed by another object. The optical illusion is that the area
+                        labeled A appears to be a darker color than the area labeled B. However, within the context of
+                        the
+                        two-dimensional image, they are of identical brightness, i.e., they would be printed with
+                        identical
+                        mixtures of ink, or displayed on a screen with pixels of identical color.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Grey_square_optical_illusion_proof2.svg/1280px-Grey_square_optical_illusion_proof2.svg.png"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>This happens because our brain interprets the surrounding context, including the shadow cast
+                            by
+                            an object, and adjusts our perception of color and brightness. As a result, the square
+                            inside
+                            the shadow looks lighter than the square outside of it, even though they are identical in
+                            color.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Checker_shadow_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="md:hidden mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Stepping
+                    feet
+                    illusion</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/77/Stepping-Feet-Motion-Illusion.gif"
+                    alt="dashboard image">
+                <img class="w-full hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/77/Stepping-Feet-Motion-Illusion.gif"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Stepping feet
+                        illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Both blocks are moving at the same speed on both strips!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The stepping feet illusion is a
+                        motion perception phenomenon involving two "buses," one blue and one yellow, moving horizontally
+                        across a "street" consisting of black and white stripes. Although both of the buses move at a
+                        constant speed, their perceived speed varies dramatically.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Fast_slow.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>When the blue bus lies on the white stripes, the contrast is high (dark blue vs. white) and
+                            easily visible, so it appears to move faster than its actual speed. On the contrary, when
+                            the blue bus is against the black stripes, the contrast is low (dark blue vs. black) and
+                            harder to see, so the movement looks slower.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Stepping_feet_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">Fraser
+                    spiral
+                    illusion</h2>
+                <img class="w-full dark:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fraser_spiral.svg/338px-Fraser_spiral.svg.png"
+                    alt="dashboard image">
+                <img class="w-5/6 md:w-3/5 mx-auto hidden dark:block rounded-lg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fraser_spiral.svg/338px-Fraser_spiral.svg.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Fraser spiral
+                        illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">There is no spiral there. These are all concentric
+                        circles!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The illusion is also known as the
+                        false spiral, or by its original name, the twisted cord illusion. The overlapping black arc
+                        segments appear to form a spiral; however, the arcs are a series of concentric circles. The
+                        visual distortion is produced by combining a regular line pattern (the circles) with misaligned
+                        parts (the differently colored strands).</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full" src="https://michaelbach.de/ot/ang-fraser/FraserPlusMask.png"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p>The illusion is augmented by the spiral components in the checkered background. It is a
+                            unique illusion, where the observer can verify the concentric strands manually. When the
+                            strands are highlighted in a different colour, it becomes obvious to the observer that no
+                            spiral is present.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Fraser_spiral_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">Rotating
+                    snakes effect</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://a.storyblok.com/f/253271/1024x1024/5ad1fd607d/42_rotsnakes_main.jpg/m/"
+                    alt="dashboard image">
+                <img class="w-full mx-auto rounded-3xl hidden dark:block" src="images/rotatingSnakes.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Rotating snakes effect</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Try looking each circle separately, others appears to be
+                        rotating but in reality are not!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400"> A type of peripheral drift
+                        illusion, the "snakes" consist of several bands of color which resemble coiled serpents.
+                        Although the image is static, the snakes appear to be moving in circles. The speed of perceived
+                        motion depends on the frequency of microsaccadic eye movements.</p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Rotating_snakes_peripheral_drift_illusion.svg/1280px-Rotating_snakes_peripheral_drift_illusion.svg.png"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> This illusion is caused by the way
+                            our brain processes visual information, particularly contrasts in brightness and color. As
+                            your eyes move across the image, the different segments trick your brain into perceiving
+                            motion, even though the image itself is completely still.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.m.wikipedia.org/wiki/Peripheral_drift_illusion#Rotating_snakes">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">Lilac
+                    chaser</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lilac-Chaser.gif" alt="dashboard image">
+                <img class="w-4/5 mx-auto rounded-3xl hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lilac-Chaser.gif" alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Lilac chaser</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Look at center, a green dot will seems to appear with
+                        purple ones disappear!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">Also known as the Pac-Man
+                        illusion, it consists of 12 lilac blurred discs arranged in a circle, around a small black,
+                        central cross on a grey background. One of
+                        the discs disappears briefly (for about 0.1 seconds), then the next (about 0.125 seconds later),
+                        and the next, and so on, in a clockwise direction. When one stares at the cross for a few
+                        seconds, one sees three illusions :
+                    <ol class="list-decimal pl-4 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                        <li>A gap running around the circle of lilac discs;</li>
+                        <li>A green disc running around the circle of lilac discs in place of the gap; and</li>
+                        <li>The green disc running around on the grey background, with the lilac discs having
+                            disappeared in
+                            sequence.</li>
+                    </ol>
+
+
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lilac-Chaser.gif"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> The chaser effect results from the phi phenomenon illusion, combined with an afterimage
+                            effect in which an opposite color, or complementary color – green – appears when each lilac
+                            spot disappears (if the discs were blue, one would see yellow), and Troxler's fading of the
+                            lilac discs.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Lilac_chaser">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Stroboscopic effect</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Strobe_2.gif" alt="dashboard image">
+                <img class="w-full mx-auto rounded-xl hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Strobe_2.gif" alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Stroboscopic effect</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Depending on the frequency of flash, the element appears
+                        motionless or rotating in reverse direction!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The stroboscopic effect is a
+                        visual phenomenon caused by aliasing that occurs when continuous rotational or other cyclic
+                        motion is represented by a series of short or instantaneous samples (as opposed to a continuous
+                        view) at a sampling rate close to the period of the motion. It accounts for the "wagon-wheel
+                        effect", so-called because in video, spoked wheels (such as on horse-drawn wagons) sometimes
+                        appear to be turning backwards.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-full"
+                            src="https://www.electrical4u.com/wp-content/uploads/Stroboscopic-Motion-Helicopter.gif"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> The stroboscopic effect makes continuous motion, like a spinning object, appear as separate,
+                            frozen, or slow-motion images when illuminated by a rapidly flashing light that matches or
+                            nearly matches the object's rotation speed.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Stroboscopic_effect">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Sander illusion</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sander_Illusion.svg/1920px-Sander_Illusion.svg.png"
+                    alt="dashboard image">
+                <img class="w-full mx-auto bg-white rounded-xl hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sander_Illusion.svg/1920px-Sander_Illusion.svg.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Sander illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Both of the blue lines are of same length!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The diagonal line bisecting the
+                        larger, left-hand parallelogram appears to be considerably longer than the diagonal line
+                        bisecting the smaller, right-hand parallelogram, but it is the same length.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-4/5 mx-auto rounded-lg"
+                            src="https://st2.depositphotos.com/2465573/11758/v/950/depositphotos_117582082-stock-illustration-sander-optical-illusion-or-sanders.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> One possible reason for this illusion is that the diagonal lines around the blue lines give
+                            a perception of depth, and when the blue lines are included in that depth, they are
+                            perceived as different lengths.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Sander_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Hermann grid illusion</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/HermannGrid.svg/1024px-HermannGrid.svg.png"
+                    alt="dashboard image">
+                <img class="w-4/5 mx-auto bg-white rounded-xl hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/HermannGrid.svg/1024px-HermannGrid.svg.png"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Hermann grid illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">Dark blobs seems to appear at the intersections!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The Hermann grid illusion is an
+                        optical illusion reported by Ludimar Hermann in 1870. The illusion is characterized by
+                        "ghostlike" grey blobs perceived at the intersections of a white (or light-colored) grid on a
+                        black background. The grey blobs disappear when looking directly at an intersection.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-4/5 mx-auto rounded-lg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Grid_illusion.svg/1024px-Grid_illusion.svg.png"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> This illusion happens because of the way our eyes process contrast and light; specifically,
+                            the neurons in our eyes are less sensitive to light in areas where multiple lines intersect,
+                            leading to the perception of dark spots.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Grid_illusion#Hermann_grid_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Leaning tower illusion</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/HermannGrid.svg/1024px-HermannGrid.svg.png"
+                    alt="dashboard image">
+                <div class="w-4/5 mx-auto overflow-hidden flex space-x-2 items-center rounded-xl">
+                    <img class="w-1/2 hidden dark:block"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pisa.tower04.jpg/800px-Pisa.tower04.jpg"
+                        alt="dashboard image">
+                    <img class="w-1/2 hidden dark:block"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pisa.tower04.jpg/800px-Pisa.tower04.jpg"
+                        alt="dashboard image">
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Leaning tower illusion</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">The right tower seems to be more tilted than the left one
+                        but both are identical images!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">The leaning tower illusion is a
+                        visual illusion seen in a pair of identical images of the Leaning Tower of Pisa photographed
+                        from below. Although the images are duplicates, one has the impression that the tower on the
+                        right leans more, as if photographed from a different angle.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-4/5 mx-auto rounded-lg"
+                            src="https://earthlymission.com/wp-content/uploads/2023/05/leaning-tower-illusion-2.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> The Leaning Tower illusion occurs when two identical images of the Leaning Tower of Pisa
+                            appear to tilt away from each other when placed side by side, due to our brain interpreting
+                            the images as part of a single 3D scene.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Leaning_tower_illusion">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+            <div
+                class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white md:hidden">
+                    Hybrid image</h2>
+                <img class="w-full dark:hidden rounded"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Hybrid_image_illusion_example_love_war.jpg/1024px-Hybrid_image_illusion_example_love_war.jpg"
+                    alt="dashboard image">
+                <img class="w-4/5 mx-auto rounded-xl hidden dark:block"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Hybrid_image_illusion_example_love_war.jpg/1024px-Hybrid_image_illusion_example_love_war.jpg"
+                    alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2
+                        class="hidden md:block mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Hybrid image</h2>
+                    <h3 class="mb-4 text-neutral-400 text-xl">From close it reads "Love", from far it reads "WAR"!
+                    </h3>
+                    <p class="font-light text-gray-500 md:text-lg dark:text-gray-400">A hybrid image is an image that is
+                        perceived in one of two different ways, depending on viewing distance, based on the way humans
+                        process visual input. Perhaps the most familiar example is one featuring Albert Einstein and
+                        Marilyn Monroe. Looking at the picture from a short distance, one can see a sharp image of
+                        Einstein, with only a hint of blurry distortion hinting at the presence of an overlaid image.
+                        Viewed from a distance in which the fine detail blurs, the unmistakable face of Monroe emerges.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="md:w-1/2 mt-8 mb-8 border hover:border-sky-600 focus:border-sky-600 rounded p-4 md:p-8 mx-4 md:mx-auto">
+                <div class="flex items-center flex-col md:flex-row">
+                    <div class="md:w-2/5 md:order-2">
+                        <img class="object-cover w-4/5 mx-auto rounded-lg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Hybrid_image_decomposition.jpg"
+                            alt="Placeholder Image">
+                    </div>
+                    <div class="md:w-3/5 text-neutral-400 md:order-1 my-4 md:my-0 md:pe-4">
+                        <h2 class="text-xl mb-4 text-gray-300 font-bold">Explanation</h2>
+                        <p> Hybrid images combine the low spatial frequencies of one picture with the high spatial
+                            frequencies of another picture, producing an image with an interpretation that changes with
+                            viewing distance.
+                        </p>
+                        <div class="w-full flex justify-center md:block">
+                            <a href="https://en.wikipedia.org/wiki/Hybrid_image">
+                                <button
+                                    class="mt-4 p-2 rounded-lg bg-slate-700 shadow font-semibold text-white mx-auto hover:bg-sky-600 focus:bg-sky-600">More
+                                    Information</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="text-gray-600 body-font pt-12 dark:bg-gray-900">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col  bg-gray-800">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Penrose_triangle.svg" alt=""
+                    class="h-6 sm:h-9">
+                <span class="ml-3 text-xl text-gray-300">Illusionistic</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 shoaib akhtar —
+                <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" rel="noopener noreferrer"
+                    target="_blank">@illusionistic</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
